@@ -1,0 +1,134 @@
+body{
+	display: flex;
+	justify-content: center;
+	background-size: 500px 500px;
+    /*background-image: url("C:/Users/Acer/Desktop/desktop file/todo list/Asset/wrinkled-2537807.jpg");*/
+    background-image: url("Asset/wrinkled-2537807.jpg");
+
+}
+
+
+/*Header of todo list*/
+
+#addTodoForm{
+	height: 150px;
+	width: 98vw;
+	margin-top: 5px;
+	display: flex;
+	border: 1px solid green;
+	justify-content: center;
+	background-color: green;
+}
+
+.form-group{
+	margin-top: 33px;
+}
+
+/*My todo list title*/
+#myTodo{
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -11px;
+	font-family: cursive;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+
+::placeholder{
+	font-weight: bold;
+	font-family: cursive;
+}
+
+/*Add Button*/
+.form-control{
+	display: block;
+	width: 80vw;
+	padding: 10px;
+}
+
+.add-btn{
+	height: 20px;
+	width: 100px;
+	margin-top: 88.5px;
+	padding: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li{
+	border: 1px solid transparent;
+	list-style: inside;
+	margin-left: -40px;
+	padding: 12px;
+	font-size: 18px;
+	font-family: cursive;
+	color: red;
+	text-decoration: line-through;
+
+	display: list-item;
+  list-style-position: inside;
+}
+
+/* Initially this property will be implemented on the todo list */
+ol li.checked {
+  color: black;
+  text-decoration: none;
+}
+
+ol li:hover{
+	background-color: #ddd;
+	transition: 0.2s;
+
+/*light grey color for even number list*/
+}
+li:nth-child(2n){
+	background-color: #eee;
+}
+
+
+/*light dark grey color for odd number list*/
+li:nth-child(2n + 1){
+	background-color: #f9f9f9;
+}
+
+/*for delete icon*/
+.fa-trash-can{
+	position: absolute;
+	cursor: pointer;
+	left: 95%;
+}
+.fa-trash-can:hover{
+	color: red;
+}
+
+/*for check icon*/
+.fa-check{
+	margin-left: 1%;
+}
+
+/*for bottom image*/
+.img-container{
+    height: 33.5vh;
+    width: 95vw;
+    margin-top: 19.8%;
+    border: 1px solid transparent;
+
+  }
+
+  .bgPage-container{
+  	/*background-image:url("C:/Users/Acer/Desktop/desktop file/wrinkled-2537807.jpg");*/
+  	position: fixed;
+  	overflow: hidden;
+    height: 60vh;
+    width: 95vw;
+
+    z-index: -1;
+    /*margin-top: 19.8%;*/
+    /*border: 1px solid black;*/
+  }
+img{
+	width: 98vw;
+}
