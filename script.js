@@ -35,7 +35,6 @@
 	var Delete_icon = document.createElement("i");
 	Checkbox_icon.setAttribute("class", "fa-solid fa-check");
 	Delete_icon.setAttribute("class", "fa-solid fa-trash-can");
-	var dec_btn = document.getElementsByClassName("fa-trash-can");
 	li.appendChild(Checkbox_icon);
 	li.appendChild(Delete_icon);
 
